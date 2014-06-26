@@ -160,10 +160,11 @@
 
 -(void)teleport:(int)y :(int)x {
 //	[self.sprite removeFromParent];
-	self.x = x; self.y = y;
-	self.sprite.position = CGPointMake(x * 32, y * 32);
 	[parent read:y :x].highlighted = NO;
 	[[parent read:y :x] updateHighlight] ;
+	self.x = x; self.y = y;
+	self.sprite.position = CGPointMake(x * 32, y * 32);
+	
 //	[self.sprite addChild:parent.parentNode];
 }
 
@@ -176,7 +177,7 @@
 }
 
 -(void)advance {
-	if (self.dset.parent == nil) {
+	if (self.dset == nil) {
 		NSLog(@"parent is nil");
 		//[self abort];
 		return;
@@ -423,6 +424,7 @@
 	ent.sprite = [[SKSpriteNode alloc] initWithTexture:[self getTileSprite:ent.key]];
 	ent.sprite.position = CGPointMake(ent.y * 32, ent.x * 32);
 	ent.pf.map = self;
+	[ent setParent:self];
 	[self.parentNode addChild:ent.sprite];
 	[detachedEntities addObject:ent];
 }
@@ -1075,7 +1077,7 @@ typedef NS_ENUM(NSInteger, IIMySceneZPosition)
 -(void)updateContent {
 	NSLog(@"Ticked detached entities ");
 	[map tickDetachedEntities];
-	[player tick];
+//	[player tic k];
 }
 
 @end

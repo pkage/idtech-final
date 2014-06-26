@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "srpg-lfx/Clump.h"
-            timestampString = "425515511.75957"
+            timestampString = "425517706.507585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1147"
-            endingLineNumber = "1147"
+            startingLineNumber = "1149"
+            endingLineNumber = "1149"
             landmarkName = "-tapHandler:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "srpg-lfx/Clump.h"
-            timestampString = "425512640.479647"
+            timestampString = "425517661.22482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "-advance"
-            landmarkType = "5">
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "@implementation DetachedEntity"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "srpg-lfx/Clump.h"
-            timestampString = "425515511.75957"
+            timestampString = "425517661.22482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "-navigate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "srpg-lfx/Clump.h"
-            timestampString = "425515568.342823"
+            timestampString = "425517661.22482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "-navigate:"
             landmarkType = "5">
          </BreakpointContent>
