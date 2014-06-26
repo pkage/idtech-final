@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE442A5195C9C98005F7425 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE442A4195C9C98005F7425 /* Foundation.framework */; };
+		3FE442A7195C9C98005F7425 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE442A6195C9C98005F7425 /* CoreGraphics.framework */; };
+		3FE442A9195C9C98005F7425 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE442A8195C9C98005F7425 /* UIKit.framework */; };
+		3FE442AB195C9C98005F7425 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE442AA195C9C98005F7425 /* SpriteKit.framework */; };
+		3FE442B1195C9C98005F7425 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FE442AF195C9C98005F7425 /* InfoPlist.strings */; };
+		3FE442B3195C9C98005F7425 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE442B2195C9C98005F7425 /* main.m */; };
+		3FE442B7195C9C98005F7425 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE442B6195C9C98005F7425 /* AppDelegate.m */; };
+		3FE442C2195C9C98005F7425 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FE442C1195C9C98005F7425 /* Spaceship.png */; };
+		3FE442C4195C9C98005F7425 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE442C3195C9C98005F7425 /* Images.xcassets */; };
+		3FE442CB195C9C98005F7425 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE442CA195C9C98005F7425 /* XCTest.framework */; };
+		3FE442CC195C9C98005F7425 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE442A4195C9C98005F7425 /* Foundation.framework */; };
+		3FE442CD195C9C98005F7425 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE442A8195C9C98005F7425 /* UIKit.framework */; };
+		3FE442D5195C9C98005F7425 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FE442D3195C9C98005F7425 /* InfoPlist.strings */; };
+		3FE442D7195C9C98005F7425 /* srpg_lfxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE442D6195C9C98005F7425 /* srpg_lfxTests.m */; };
+		3FE442E3195C9EAE005F7425 /* mg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE442E1195C9EAE005F7425 /* mg.cpp */; };
+		3FE442E6195CA202005F7425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE442E5195CA202005F7425 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FE442CE195C9C98005F7425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FE44299195C9C98005F7425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE442A0195C9C98005F7425;
+			remoteInfo = "srpg-lfx";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FE442A1195C9C98005F7425 /* srpg-lfx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "srpg-lfx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE442A4195C9C98005F7425 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3FE442A6195C9C98005F7425 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3FE442A8195C9C98005F7425 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3FE442AA195C9C98005F7425 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3FE442AE195C9C98005F7425 /* srpg-lfx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "srpg-lfx-Info.plist"; sourceTree = "<group>"; };
+		3FE442B0195C9C98005F7425 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FE442B2195C9C98005F7425 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FE442B4195C9C98005F7425 /* srpg-lfx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "srpg-lfx-Prefix.pch"; sourceTree = "<group>"; };
+		3FE442B5195C9C98005F7425 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FE442B6195C9C98005F7425 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FE442C1195C9C98005F7425 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		3FE442C3195C9C98005F7425 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3FE442C9195C9C98005F7425 /* srpg-lfxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "srpg-lfxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE442CA195C9C98005F7425 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3FE442D2195C9C98005F7425 /* srpg-lfxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "srpg-lfxTests-Info.plist"; sourceTree = "<group>"; };
+		3FE442D4195C9C98005F7425 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3FE442D6195C9C98005F7425 /* srpg_lfxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = srpg_lfxTests.m; sourceTree = "<group>"; };
+		3FE442E0195C9CCB005F7425 /* Clump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clump.h; sourceTree = "<group>"; };
+		3FE442E1195C9EAE005F7425 /* mg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mg.cpp; sourceTree = "<group>"; };
+		3FE442E2195C9EAE005F7425 /* mg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mg.h; sourceTree = "<group>"; };
+		3FE442E4195C9F8B005F7425 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		3FE442E5195CA202005F7425 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FE4429E195C9C98005F7425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE442A7195C9C98005F7425 /* CoreGraphics.framework in Frameworks */,
+				3FE442A9195C9C98005F7425 /* UIKit.framework in Frameworks */,
+				3FE442AB195C9C98005F7425 /* SpriteKit.framework in Frameworks */,
+				3FE442A5195C9C98005F7425 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE442C6195C9C98005F7425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE442CB195C9C98005F7425 /* XCTest.framework in Frameworks */,
+				3FE442CD195C9C98005F7425 /* UIKit.framework in Frameworks */,
+				3FE442CC195C9C98005F7425 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FE44298195C9C98005F7425 = {
+			isa = PBXGroup;
+			children = (
+				3FE442AC195C9C98005F7425 /* srpg-lfx */,
+				3FE442D0195C9C98005F7425 /* srpg-lfxTests */,
+				3FE442A3195C9C98005F7425 /* Frameworks */,
+				3FE442A2195C9C98005F7425 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FE442A2195C9C98005F7425 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FE442A1195C9C98005F7425 /* srpg-lfx.app */,
+				3FE442C9195C9C98005F7425 /* srpg-lfxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FE442A3195C9C98005F7425 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE442A4195C9C98005F7425 /* Foundation.framework */,
+				3FE442A6195C9C98005F7425 /* CoreGraphics.framework */,
+				3FE442A8195C9C98005F7425 /* UIKit.framework */,
+				3FE442AA195C9C98005F7425 /* SpriteKit.framework */,
+				3FE442CA195C9C98005F7425 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FE442AC195C9C98005F7425 /* srpg-lfx */ = {
+			isa = PBXGroup;
+			children = (
+				3FE442E5195CA202005F7425 /* Main.storyboard */,
+				3FE442E1195C9EAE005F7425 /* mg.cpp */,
+				3FE442E2195C9EAE005F7425 /* mg.h */,
+				3FE442B5195C9C98005F7425 /* AppDelegate.h */,
+				3FE442B6195C9C98005F7425 /* AppDelegate.m */,
+				3FE442E0195C9CCB005F7425 /* Clump.h */,
+				3FE442C1195C9C98005F7425 /* Spaceship.png */,
+				3FE442C3195C9C98005F7425 /* Images.xcassets */,
+				3FE442AD195C9C98005F7425 /* Supporting Files */,
+				3FE442E4195C9F8B005F7425 /* config.h */,
+			);
+			path = "srpg-lfx";
+			sourceTree = "<group>";
+		};
+		3FE442AD195C9C98005F7425 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FE442AE195C9C98005F7425 /* srpg-lfx-Info.plist */,
+				3FE442AF195C9C98005F7425 /* InfoPlist.strings */,
+				3FE442B2195C9C98005F7425 /* main.m */,
+				3FE442B4195C9C98005F7425 /* srpg-lfx-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FE442D0195C9C98005F7425 /* srpg-lfxTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FE442D6195C9C98005F7425 /* srpg_lfxTests.m */,
+				3FE442D1195C9C98005F7425 /* Supporting Files */,
+			);
+			path = "srpg-lfxTests";
+			sourceTree = "<group>";
+		};
+		3FE442D1195C9C98005F7425 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FE442D2195C9C98005F7425 /* srpg-lfxTests-Info.plist */,
+				3FE442D3195C9C98005F7425 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FE442A0195C9C98005F7425 /* srpg-lfx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE442DA195C9C98005F7425 /* Build configuration list for PBXNativeTarget "srpg-lfx" */;
+			buildPhases = (
+				3FE4429D195C9C98005F7425 /* Sources */,
+				3FE4429E195C9C98005F7425 /* Frameworks */,
+				3FE4429F195C9C98005F7425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "srpg-lfx";
+			productName = "srpg-lfx";
+			productReference = 3FE442A1195C9C98005F7425 /* srpg-lfx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FE442C8195C9C98005F7425 /* srpg-lfxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE442DD195C9C98005F7425 /* Build configuration list for PBXNativeTarget "srpg-lfxTests" */;
+			buildPhases = (
+				3FE442C5195C9C98005F7425 /* Sources */,
+				3FE442C6195C9C98005F7425 /* Frameworks */,
+				3FE442C7195C9C98005F7425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FE442CF195C9C98005F7425 /* PBXTargetDependency */,
+			);
+			name = "srpg-lfxTests";
+			productName = "srpg-lfxTests";
+			productReference = 3FE442C9195C9C98005F7425 /* srpg-lfxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FE44299195C9C98005F7425 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "pk inc.";
+				TargetAttributes = {
+					3FE442C8195C9C98005F7425 = {
+						TestTargetID = 3FE442A0195C9C98005F7425;
+					};
+				};
+			};
+			buildConfigurationList = 3FE4429C195C9C98005F7425 /* Build configuration list for PBXProject "srpg-lfx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FE44298195C9C98005F7425;
+			productRefGroup = 3FE442A2195C9C98005F7425 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FE442A0195C9C98005F7425 /* srpg-lfx */,
+				3FE442C8195C9C98005F7425 /* srpg-lfxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FE4429F195C9C98005F7425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE442B1195C9C98005F7425 /* InfoPlist.strings in Resources */,
+				3FE442C4195C9C98005F7425 /* Images.xcassets in Resources */,
+				3FE442C2195C9C98005F7425 /* Spaceship.png in Resources */,
+				3FE442E6195CA202005F7425 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE442C7195C9C98005F7425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE442D5195C9C98005F7425 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE4429D195C9C98005F7425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE442B7195C9C98005F7425 /* AppDelegate.m in Sources */,
+				3FE442E3195C9EAE005F7425 /* mg.cpp in Sources */,
+				3FE442B3195C9C98005F7425 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FE442C5195C9C98005F7425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE442D7195C9C98005F7425 /* srpg_lfxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FE442CF195C9C98005F7425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE442A0195C9C98005F7425 /* srpg-lfx */;
+			targetProxy = 3FE442CE195C9C98005F7425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FE442AF195C9C98005F7425 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE442B0195C9C98005F7425 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3FE442D3195C9C98005F7425 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE442D4195C9C98005F7425 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FE442D8195C9C98005F7425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FE442D9195C9C98005F7425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FE442DB195C9C98005F7425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "srpg-lfx/srpg-lfx-Prefix.pch";
+				INFOPLIST_FILE = "srpg-lfx/srpg-lfx-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3FE442DC195C9C98005F7425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "srpg-lfx/srpg-lfx-Prefix.pch";
+				INFOPLIST_FILE = "srpg-lfx/srpg-lfx-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3FE442DE195C9C98005F7425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/srpg-lfx.app/srpg-lfx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "srpg-lfx/srpg-lfx-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "srpg-lfxTests/srpg-lfxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3FE442DF195C9C98005F7425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/srpg-lfx.app/srpg-lfx";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "srpg-lfx/srpg-lfx-Prefix.pch";
+				INFOPLIST_FILE = "srpg-lfxTests/srpg-lfxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FE4429C195C9C98005F7425 /* Build configuration list for PBXProject "srpg-lfx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE442D8195C9C98005F7425 /* Debug */,
+				3FE442D9195C9C98005F7425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE442DA195C9C98005F7425 /* Build configuration list for PBXNativeTarget "srpg-lfx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE442DB195C9C98005F7425 /* Debug */,
+				3FE442DC195C9C98005F7425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FE442DD195C9C98005F7425 /* Build configuration list for PBXNativeTarget "srpg-lfxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE442DE195C9C98005F7425 /* Debug */,
+				3FE442DF195C9C98005F7425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FE44299195C9C98005F7425 /* Project object */;
+}
