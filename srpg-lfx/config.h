@@ -14,3 +14,7 @@
 #ifndef MAXTILES
 #define MAXTILES 298
 #endif
+
+#ifndef AGGRORANGE
+#define AGGRORANGE 10
+#endif

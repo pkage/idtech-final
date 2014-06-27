@@ -64,7 +64,7 @@
 }
 @property (strong, nonatomic) MyScene* parent;
 @property (strong, nonatomic) SKSpriteNode *parentNode;
-
+-(int)getNumOfNPE;
 -(void)tellPlayerToMove:(int)y :(int)x;
 -(BOOL)valid:(int)y :(int)x;
 -(Maptile*)read:(int)y :(int)x;
@@ -74,6 +74,7 @@
 -(void)registerTiles;
 -(void)loadMap:(NSString*)name;
 -(void)registerTilesRelativeTo:(SKNode*) node;
+-(void*)getPlayer;
 @end
 
 
@@ -105,6 +106,7 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) PathFinder *pf;
 @property (strong, atomic) PathNode *dset;
+@property (assign, atomic) BOOL isPlayer;
 -(id)initWithSpriteAndPosition:(NSString*)key :(int)y :(int)x;
 -(void)setParent:(Map*) ptr;
 -(void)acceptDirectionSet:(PathNode*)topNode;
@@ -138,12 +140,14 @@
 	self.health = 100;
 	self.pf = [[PathFinder alloc] init];
 	self.sprite.zPosition = 100;
+	self.isPlayer = NO;
 	self.pf.initialNode = self.dset;
 	return self;
 }
 -(id)initWithSpriteAndPosition:(NSString *)key :(int)y :(int)x {
 	self.pf = [[PathFinder alloc] init];
 	self.sprite.zPosition = 100;
+	self.isPlayer = NO;
 	self.pf.initialNode = self.dset;
 	return self;
 }
@@ -152,6 +156,7 @@
 	self.x = x;
 	self.health = 100;
 	self.pf.initialNode = self.dset;
+	self.isPlayer = NO;
 	self.sprite.zPosition = 100;
 	self.sprite.position = CGPointMake(x * 32, y * 32);
 	self.pf = [[PathFinder alloc] init];
@@ -176,6 +181,8 @@
 	self.dset = nil; // is this okay?
 }
 
+
+
 -(void)advance {
 	if (self.dset == nil) {
 		NSLog(@"parent is nil");
@@ -196,6 +203,10 @@
 
 -(void)tick {
 	[self advance];
+	if (!self.isPlayer) {
+		DetachedEntity *p = parent.getPlayer;
+		if (sqrt(pow(p.x - self.x, 2) + pow(p.y - self.y, 2)) < 
+	}
 }
 
 -(void)navigate:(coordPair *)pair {
@@ -406,6 +417,23 @@
 	
 }
 
+-(int)getNumOfNPE {
+	int count = 0;
+	for (DetachedEntity *ent in detachedEntities) {
+		if (!ent.isPlayer) {
+			count++;
+		}
+	}
+	return count;
+}
+-(void*)getPlayer {
+	for (DetachedEntity *ent in detachedEntities) {
+		if (ent.isPlayer) {
+			return CFBridgingRetain(ent);
+		}
+	}
+	return nil;
+}
 -(coordPair*)convertMaptoNode:(coordPair*)pair {
 	if (![self valid:pair.y :pair.x]) {
 		return nil;
@@ -438,7 +466,7 @@
 
 @end
 
-//locketEntity.m
+//lockedEntity.m
 @implementation LockedEntity
 @end
 
@@ -907,11 +935,12 @@ typedef NS_ENUM(NSInteger, IIMySceneZPosition)
 		player = [[DetachedEntity alloc] initWithPosition:10 :10];
 		player.key = @"297";
 		[map addDetachedEntity:player];
+		player.isPlayer = YES;
 		NSLog(@"player position: [%f,%f]", player.sprite.position.y, player.sprite.position.x);
 		[player navigate:[[coordPair alloc] initWithCoords:20 :20]];
 		//[pf backgroundProcess:1 :1 :20 :10 :node];
-		ticker = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateContent) userInfo:nil repeats:YES];
-		[ticker fire];
+		ticker = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(updateContent) userInfo:nil repeats:YES];
+//		[ticker fire];
 		
 	}
     return self;
